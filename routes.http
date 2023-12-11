@@ -1,0 +1,32 @@
+POST http://localhost:8080/gato
+Content-Type: application/json
+
+{
+    "nome": "Bolinha",
+    "dono": "João",
+    "tipoPelo": "curto",
+    "idade": 7,
+    "temperamento": "docil"
+}
+
+###
+
+GET  http://localhost:8080/gato
+
+###
+GET  http://localhost:8080/gato?search=Felipe
+
+###
+PUT  http://localhost:8080/gato/
+Content-Type: application/json
+
+{
+    "nome": "Nome do Gato: Miu",
+    "dono": "Felipe",
+    "tipoPelo": "Pelagem: longa",
+    "idade": 10,
+    "temperamento": "agressivo"
+}
+
+###
+DELETE http://localhost:8080/gato/
